@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Visible - Belluccia 3</title>
+
+    <!-- Tipografía desde Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#">MiWeb</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Paso a paso</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Galeria sensorial</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Preguntas frecuentes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción con fondo -->
+<section class="section-spacing bg-cover d-flex align-items-center" style="background-image: url('IMAGENES/FOTOS/Home.png'); min-height: 100vh;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texto principal -->
+      <div class="col-lg-7">
+        <p class="volanta-custom mb-2">VINOS LISTOS PARA VOS</p>
+        <h1 class="hero-title mb-3">Nuevo mes,<br>nuevo vino.</h1>
+        <p class="hero-lead mb-4">
+          Recibí <strong>cada mes</strong> una selección curada por sommeliers, con vinos únicos, fichas sensoriales, maridajes y acceso a experiencias exclusivas.
+        </p>
+       <a href="#" class="btn btn-pill-yellow">
+  Descubrí tu box
+  <span class="divider"></span>
+  <i class="bi bi-arrow-right"></i>
+</a>
+      </div>
+      <!-- Imagen destacada -->
+      <div class="col-lg-5 text-center">
+        <img src="IMAGENES/FOTOS/Capa-1.png" class="hero-img" alt="Imagen Hero">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- HERO: Sección de portada con llamado a la acción con fondo -->
+<!-- SECCIÓN B: Imagen izquierda, texto derecha QUIENES SOMOS -->
+<section class="section-spacing bg-cover" style="background-image: url('IMAGENES/FOTOS/QUIENES\ SOMOS\ fondo.jpg'); background-size: cover;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Columna de imagen -->
+      <div class="col-lg-6 text-center mb-4 mb-lg-0">
+        <img src="IMAGENES/FOTOS/quienessomos.png" class="img-fluid img-sello-equipo" alt="Imagen ilustrativa">
+      </div>
+      <!-- Columna de texto -->
+      <div class="col-lg-6 ps-lg-5">
+        <p class="volanta-custom mb-1">Quienes somos</p>
+        <h2 class="h2-custom mb-2">Experiencia que vale la pena</h2>
+        <p class="quienes-lead mb-4">
+          Nos dedicamos a elegir <strong>botellas con onda</strong>, de bodegas chicas y copadas, para que cada mes te llegue una caja con tres vinos que te van a sorprender y te hagan brindar distinto.<br>
+          Nuestro compromiso es <strong>hacerte disfrutar sin vueltas</strong>: buenos vinos, maridajes ricos y fichas con data útil para que aprendas mientras descorchás, a tu ritmo.
+        </p>
+        <a href="#" class="btn btn-pill-yellow">
+          Conocer más
+          <span class="divider"></span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT: NUESTROS VALORES -->
+<section class="section-spacing bg-cover bg-overlay-dark valores-section"
+  style="background-image: url('IMAGENES/FOTOS/fondovalores.png'); min-height: 110vh; display: flex; align-items: center;">
+  <div class="container text-center w-100">
+    <p class="volanta-custom mb-2">NUESTROS VALORES</p>
+    <h2 class="h2-custom mb-5">Beneficios posta que hacen la diferencia.</h2>
+    <div class="row mt-5 equipo-row justify-content-center">
+      <!-- Valor 1 -->
+      <div class="col-md-4 mb-4 valor-card">
+        <img src="IMAGENES/FOTOS/copi.png" class="img-fluid mb-4" alt="Pasión verdadera">
+        <h3 class="nombre-equipo">Pasión verdadera</h3>
+        <p class="desc-equipo">
+          Nos mueve el amor por el vino y por lo que genera compartirlo.
+        </p>
+      </div>
+      <!-- Valor 2 (central, si querés hacerlo un poco más grande) -->
+      <div class="col-md-4 mb-4 valor-card central">
+        <img src="IMAGENES/FOTOS/uvita.png" class="img-fluid mb-4" alt="Bodegas pequeñas">
+        <h3 class="nombre-equipo">Bodegas pequeñas</h3>
+        <p class="desc-equipo">
+          Apoyamos proyectos con alma, no marcas sin historia.
+        </p>
+      </div>
+      <!-- Valor 3 -->
+      <div class="col-md-4 mb-4 valor-card">
+        <img src="IMAGENES/FOTOS/maniyo.png" class="img-fluid mb-4" alt="Comunidad copada">
+        <h3 class="nombre-equipo">Comunidad copada</h3>
+        <p class="desc-equipo">
+          Acá no tomás solo: te sumás a una red de gente que ama el vino como vos.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /ABOUT -->
+
+<!-- PASOS: Cómo funciona -->
+<section 
+  class="section-spacing bg-cover" 
+  style="background-image: url('IMAGENES/FOTOS/QUIENES\ SOMOS\ fondo.jpg) background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Columna IZQUIERDA: pasos -->
+      <div class="col-lg-6 ps-lg-5">
+        <p class="volanta-custom mb-1">así funciona yavino</p>
+        <h2 class="h2-custom mb-2">Así de simple, así de rico</h2>
+        <div class="row g-3">
+          <!-- CARD 1 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">1</span>
+              <span class="paso-texto-custom fw-semibold">Elegí tu membresía</span>
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">2</span>
+              <span class="paso-texto-custom fw-semibold">Armamos tu envío</span>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">3</span>
+              <span class="paso-texto-custom fw-semibold">Sumamos extras</span>
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">4</span>
+              <span class="paso-texto-custom fw-semibold">Lo despachamos</span>
+            </div>
+          </div>
+          <!-- CARD 5 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">5</span>
+              <span class="paso-texto-custom fw-semibold">Disfrutá en casa</span>
+            </div>
+          </div>
+          <!-- CARD 6 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">6</span>
+              <span class="paso-texto-custom fw-semibold">¡Repetí cada mes!</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-pill-yellow mt-4">
+          Conocer más
+          <span class="divider"></span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+      <!-- Columna DERECHA: imagen -->
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+        <img src="IMAGENES/FOTOS/CLI.png" class="img-fluid img-stamp" alt="Copas de vino brindando">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<<!-- PLANES DE SUSCRIPCIÓN: Cards tipo postal sobre fondo -->
+<section 
+  class="section-spacing bg-cover"
+  style="background-image: url('IMAGENES/FOTOS/SUSCRIPPP.jpg'); background-size: cover; background-position: center; min-height: 30vh;">
+  <div class="container">
+    <p class="volanta-custom text-center mb-2">NUESTRAS SUSCRIPCIONES</p>
+    <h2 class="h2-custom text-center mb-2">Descubrí la propuesta ideal para vos</h2>
+    <p class="p-custom text-center mb-5">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
+    <div class="row justify-content-center align-items-end gy-5">
+      <!-- CARD 1: Box Clásico -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card-img-postal position-relative">
+          <img src="IMAGENES/FOTOS/cardddd.png" alt="Fondo postal" class="w-100 card-postal-bg">
+          <div class="card-postal-content">
+            <h6 class="text-uppercase text-muted mb-1">Box Clásico</h6>
+            <div class="fs-3 fw-bold mb-2 text-primary">$49.000 <span class="fs-6 fw-normal text-dark">/ mes</span></div>
+            <img src="IMAGENES/FOTOS/caja1ok!.png" class="img-fluid my-3" alt="Box Clásico" style="max-width: 150px;">
+            <p class="p-custom mt-2 text-center">Ideal para quienes están empezando.<br><strong>¿Qué incluye?</strong></p>
+            <ul class="list-unstyled text-start mx-auto mb-3" style="max-width: 210px;">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 vino tinto del sur</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 vino blanco</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Maridaje básico</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Fichas sensoriales + QR</li>
+              <li><i class="bi bi-x-circle text-secondary me-2"></i> Acceso a cata</li>
+              <li><i class="bi bi-x-circle text-secondary me-2"></i> WineSwap</li>
+            </ul>
+            <a href="#" class="btn btn-pill-yellow mt-2">
+              ¡Lo quiero! <span class="divider"></span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 2: Box Curado -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card-img-postal position-relative">
+          <img src="IMAGENES/FOTOS/cardddd.png" alt="Fondo postal" class="w-100 card-postal-bg">
+          <div class="card-postal-content">
+            <h6 class="text-uppercase text-muted mb-1">Box Curado</h6>
+            <div class="fs-3 fw-bold mb-2 text-primary">$55.000 <span class="fs-6 fw-normal text-dark">/ mes</span></div>
+            <img src="IMAGENES/FOTOS/caja1ok!.png" class="img-fluid my-3" alt="Box Curado" style="max-width: 150px;">
+            <p class="p-custom mt-2 text-center">Más identidad y detalles.<br><strong>¿Qué incluye?</strong></p>
+            <ul class="list-unstyled text-start mx-auto mb-3" style="max-width: 210px;">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 vino tinto del norte</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 vino naranjo</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Maridaje al vacío</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Fichas sensoriales + QR</li>
+              <li><i class="bi bi-x-circle text-secondary me-2"></i> Acceso a cata</li>
+              <li><i class="bi bi-x-circle text-secondary me-2"></i> WineSwap</li>
+            </ul>
+            <a href="#" class="btn btn-pill-yellow mt-2">
+              ¡Lo quiero! <span class="divider"></span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 3: Box Explorador -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card-img-postal position-relative">
+          <img src="IMAGENES/FOTOS/cardddd.png" alt="Fondo postal" class="w-100 card-postal-bg">
+          <div class="card-postal-content">
+            <h6 class="text-uppercase text-muted mb-1">Box Explorador</h6>
+            <div class="fs-3 fw-bold mb-2 text-primary">$60.000 <span class="fs-6 fw-normal text-dark">/ mes</span></div>
+            <img src="IMAGENES/FOTOS/caja1ok!.png" class="img-fluid my-3" alt="Box Explorador" style="max-width: 150px;">
+            <p class="p-custom mt-2 text-center">Para los expertos, todo desbloqueado!<br><strong>¿Qué incluye?</strong></p>
+            <ul class="list-unstyled text-start mx-auto mb-3" style="max-width: 210px;">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 vino sorpresa</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Copa incluida</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Maridaje temático</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Fichas sensoriales + QR</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Acceso a cata virtual</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> WineSwap</li>
+            </ul>
+            <a href="#" class="btn btn-pill-yellow mt-2">
+              ¡Lo quiero! <span class="divider"></span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SECCIÓN B: Imagen izquierda, texto derecha QUIENES SOMOS -->
+<section class="section-spacing bg-cover" style="background-image: url('IMAGENES/FOTOS/QUIENES\ SOMOS\ fondo.jpg'); background-size: cover;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Columna de imagen -->
+      <div class="col-lg-6 text-center mb-4 mb-lg-0">
+        <img src="IMAGENES/FOTOS/tablamaridajes.png" class="img-fluid img-sello-equipo" alt="Imagen ilustrativa">
+      </div>
+      <!-- Columna de texto -->
+      <div class="col-lg-6 ps-lg-5">
+        <p class="volanta-custom mb-1">NUESTROS MARIDAJES</p>
+        <h2 class="h2-custom mb-2">Maridajes que elevan tu copa</h2>
+        <p class="quienes-lead mb-4">
+          Creemos que cada vino <strong>merece su compañía ideal.</strong>, Por eso, nuestras cajas incluyen maridajes pensados para realzar los sabores de cada etiqueta: <strong>quesos, fiambres y bocados que acompañan sin tapar</strong>: , seleccionados para que tu experiencia sea redonda de principio a fin. Vos solo abrí la botella, serví la copa y dejate llevar por el maridaje.
+        </p>
+        <a href="#" class="btn btn-pill-yellow">
+          Conocer más
+          <span class="divider"></span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- GALERÍA A: Grid clásico de 3 columnas con fondo y más espacio -->
+<section 
+  class="section-spacing bg-cover py-5" 
+  id="galeria-sensorial"
+  style="background-image: url('IMAGENES/FOTOS/galeeeeeeee.png') background-size: cover; background-position: center;">
+  <div class="container text-center">
+    <p class="volanta-custom mb-2">galería sensorial</p>
+    <h2 class="h2-custom mb-5">Nuestras especialidades en imágenes</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/vinitttt.png" class="img-fluid img-rounded rounded" alt="Imagen 1">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/quesito.png" class="img-fluid img-rounded rounded" alt="Imagen 2">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/f.png" class="img-fluid img-rounded rounded" alt="Imagen 3">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/jamoncito.png" class="img-fluid img-rounded rounded" alt="Imagen 4">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/9.png" class="img-fluid img-rounded rounded" alt="Imagen 5">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/uvas.png" class="img-fluid img-rounded rounded" alt="Imagen 6">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/blanc.png" class="img-fluid img-rounded rounded" alt="Imagen 7">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/corchitos.png" class="img-fluid img-rounded rounded" alt="Imagen 8">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/na.png" class="img-fluid img-rounded rounded" alt="Imagen 9">
+      </div>
+    </div>
+  </div>
+</section>
+``
+
+<!-- TEAM: Presentación del equipo -->
+<section 
+  class="section-spacing bg-cover py-5 text-center" 
+  style="background-image: url('IMAGENES/FOTOS/QUIENES\ SOMOS\ fondo.jpg'); background-size: cover; background-position: center;">
+  
+  <div class="container">
+    <p class="volanta-custom mb-2">APASIONADOS POR LO QUE HACEN</p>
+    <h2 class="h2-custom mb-5">Conocé a nuestro súper equipo de expertos</h2>
+    <div class="row mt-5 equipo-row">
+      <!-- Integrante 1 -->
+      <div class="col-md-4 mb-4">
+        <img src="IMAGENES/FOTOS/PIBA3.png" class="img-fluid mb-4" alt="Lucía Moretti">
+        <h3 class="nombre-equipo">Lucía Moretti</h3>
+        <p class="desc-equipo">
+          Es fanática del Malbec, pero siempre lista para recomendarte algo nuevo.
+        </p>
+      </div>
+      <!-- Integrante 2 -->
+      <div class="col-md-4 mb-4">
+        <img src="IMAGENES/FOTOS/PIBA2.png" class="img-fluid mb-4" alt="Cami Herrera">
+        <h3 class="nombre-equipo">Cami Herrera</h3>
+        <p class="desc-equipo">
+          Amante de los blancos frescos y las cenas.<br>Hace que aprender de vinos sea un plan.
+        </p>
+      </div>
+      <!-- Integrante 3 -->
+      <div class="col-md-4 mb-4">
+        <img src="IMAGENES/FOTOS/PIBE1.png" class="img-fluid mb-4" alt="Franco Guidi">
+        <h3 class="nombre-equipo">Franco Guidi</h3>
+        <p class="desc-equipo">
+          Experto en vinos naturales. Cree que una buena charla empieza con una copa en la mano.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /TEAM -->
+
+
+ <!-- BODEGAS QUE NOS BANCAN -->
+<section class="section-spacing bg-cover text-white bodegas-section" style="background-image: url('IMAGENES/FOTOS/bodegas.png');">
+  <div class="container text-center">
+    <h2 class="h2-custom mb-5 fw-bold">Bodegas que nos bancan</h2>
+    <div class="row justify-content-center align-items-center g-4">
+      <div class="col-6 col-md-2 d-flex justify-content-center">
+        <img src="IMAGENES/FOTOS/logo1.png" class="img-fluid brand-logo" alt="Riccitelli">
+      </div>
+      <div class="col-6 col-md-2 d-flex justify-content-center">
+        <img src="IMAGENES/FOTOS/logo2.png" class="img-fluid brand-logo" alt="El Porvenir de Cafayate">
+      </div>
+      <div class="col-6 col-md-2 d-flex justify-content-center">
+        <img src="IMAGENES/FOTOS/logo3.png" class="img-fluid brand-logo" alt="Zorzal">
+      </div>
+      <div class="col-6 col-md-2 d-flex justify-content-center">
+        <img src="IMAGENES/FOTOS/logo4.png" class="img-fluid brand-logo" alt="Krontiras">
+      </div>
+      <div class="col-6 col-md-2 d-flex justify-content-center">
+        <img src="IMAGENES/FOTOS/logo1.png" class="img-fluid brand-logo" alt="Durigutti">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /BODEGAS QUE NOS BANCAN -->
+
+
+<!-- CONTACTO: Formulario y newsletter -->
+<section class="section-spacing container">
+  <div class="row align-items-center justify-content-center">
+    <!-- Imagen izquierda (marco + persona ya todo en UNA sola imagen PNG) -->
+    <div class="col-lg-5 mb-4 mb-lg-0 text-center d-flex justify-content-center">
+      <img src="IMAGENES/FOTOS/Rectangsssle-83.png" class="img-fluid contacto-img-sello" alt="Contacto">
+      <!-- Cambiá el src al PNG correcto -->
+    </div>
+
+    <!-- Formulario derecha -->
+    <div class="col-lg-7">
+      <p class="text-uppercase text-secondary mb-1" style="letter-spacing:2px;">Contacto</p>
+      <h2 class="h2-custom mb-4" style="color: #4d8cf7;">¿Tenés dudas? Te respondemos al toque</h2>
+      <form>
+        <div class="row g-2">
+          <div class="col-6">
+            <input type="text" class="form-control form-custom mb-3" placeholder="Nombre">
+          </div>
+          <div class="col-6">
+            <input type="text" class="form-control form-custom mb-3" placeholder="Apellido">
+          </div>
+        </div>
+        <input type="email" class="form-control form-custom mb-3" placeholder="Email">
+        <input type="text" class="form-control form-custom mb-3" placeholder="Número">
+        <textarea class="form-control form-custom mb-3" rows="3" placeholder="Mensaje"></textarea>
+       <a href="#" class="btn btn-pill-yellow">
+  Enviar mensaje
+  <span class="divider"></span>
+  <i class="bi bi-arrow-right"></i>
+</a>
+      </form>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="row justify-content-center mt-6">
+    <div class="col-lg-8 text-center">
+      <p class="text-uppercase text-secondary mb-2" style="letter-spacing:2px;">Suscribite a nuestro newsletter</p>
+      <h2 class="h2-custom mb-2" style="color: #4d8cf7;">No te pierdas nuestras noticias</h2>
+      <p class="mb-4">Suscribite y enterate <strong>antes que nadie</strong> de lanzamientos, descuentos y planes con vino.</p>
+      <form class="row g-2 justify-content-center">
+        <div class="col-md-7 mb-2 mb-md-0">
+          <input type="email" class="form-control form-custom" placeholder="Ingresá tu email">
+        </div>
+        <div class="col-md-3">
+          <button type="submit" class="btn btn-pill-yellow w-100">Suscribirse</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- /CONTACTO -->
+
+
+<!-- FOOTER: Pie de página completo -->
+<footer class="footer-custom text-white pt-5 pb-3" style="background: #4d8cf7;">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Logo -->
+      <div class="col-md-3 mb-4 mb-md-0 d-flex flex-column justify-content-between">
+        <div>
+          <img src="IMAGENES/FOTOS/YaVino.png" alt="Logo" class="mb-3" style="max-width: 120px;">
+        </div>
+        <small class="d-block mt-3">&copy; 2025, Todos los derechos reservados.</small>
+      </div>
+
+      <!-- Horarios -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold mb-2">Horarios</h6>
+        <div class="text-white-50">
+          <div>Semana: <span class="text-white-50">10 a 19hs</span></div>
+          <div>Sab y Dom: <span class="text-white-50">11 a 16hs</span></div>
+        </div>
+      </div>
+
+      <!-- Dirección -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold mb-2">Dirección</h6>
+        <div>Av. Vino 1234, Mendoza, Argentina</div>
+      </div>
+
+      <!-- Contacto + redes -->
+      <div class="col-md-3 d-flex flex-column justify-content-between">
+        <div>
+          <h6 class="fw-bold mb-2">Contacto</h6>
+          <div class="mb-1">
+            <i class="bi bi-envelope me-2"></i> info@tuweb.com
+          </div>
+          <div>
+            <i class="bi bi-telephone me-2"></i> +54 261 555-1111
+          </div>
+        </div>
+        <div class="mt-3">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter-x fs-5"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>

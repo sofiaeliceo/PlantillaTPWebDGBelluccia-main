@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "PlantillaTPWebDGBelluccia-main",
+			"path": "."
+		},
+		{
+			"name": "IMAGENES",
+			"path": "IMAGENES"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PlantillaTPWebDGBelluccia-main"
+	}
+}

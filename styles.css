@@ -1,0 +1,835 @@
+/* 1. VARIABLES DE DISEÑO */
+:root {
+  --primary-color: #8199a4;
+  --secondary-color: #30302E;
+  --light-color: #F4F2EA;
+  --dark-color: #5089D3;
+  --font-family-base: 'Plus Jakarta Sans', sans-serif;
+  --font-family-titles: 'Raleway', sans-serif;
+}
+
+
+/* 2. ESTILOS GENERALES */
+body {
+  font-family: var(--font-family-base);
+  color: #212529;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* 3. NAVBAR */
+.navbar {
+  background-color: #F4F2EA;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 10px 0;
+}
+
+.navbar.scrolled {
+  background-color: #F4F2EA;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: var(--dark-color);
+}
+
+.nav-link {
+  color: var(--dark-color);
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* 4. HERO */
+.row.p-5 {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-family-titles);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
+
+p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Botones */
+.btn {
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-dark {
+  background-color: #FFD008;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #FFD008;
+}
+
+.btn-outline-dark {
+  border: 2px solid var#FFD008;
+  color: var#FFD008;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--primary-color);
+  color: #FFD008;
+}
+
+/* 5. SECCIONES */
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+  margin: 20px auto 0;
+}
+
+/* 6. CARDS */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.masonry__container {
+  column-count: 4;
+  column-gap: 1rem;
+}
+
+.masonry__item {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+/* 7. TESTIMONIOS */
+.blockquote {
+  background-color: var(--light-color);
+  border-left: 4px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* 8. FORMULARIO */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+form button.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+/* 9. FOOTER */
+footer {
+  background-color: var(--dark-color);
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* 10. IMÁGENES */
+img.rounded-circle {
+  border: none(--light-color);
+}
+
+/* 11. GALERÍA */
+.container .row img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* TITULOS */
+.h1-custom {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.h2-custom {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--dark-color);
+}
+
+.h3-custom {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--dark-color);
+}
+
+.h4-custom {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+/* PÁRRAFOS Y TEXTOS */
+.p-custom {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.lead-custom {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+/* FONDOS E IMÁGENES */
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay-light {
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(5px);
+}
+
+.bg-overlay-dark {
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  color: #fff;
+}
+
+.img-rounded {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* TEXTOS ADICIONALES */
+.text-uppercase-custom {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-muted-custom {
+  color: #6c757d;
+}
+
+/* ESPACIADOS */
+.section-spacing {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-spacing-sm {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/* ============================== */
+/* MEDIA QUERIES */
+/* ============================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .masonry__container {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .masonry__container {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .masonry__container {
+    column-count: 1;
+  }
+}
+.btn-pill-yellow {
+  background-color: #FFD600;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  padding: 18px 40px;
+  font-weight: 500;
+  font-size: 19px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-pill-yellow:hover {
+  background-color: #e6c200;
+  text-decoration: none;
+}
+
+.btn-pill-yellow .divider {
+  border-left: 2px solid #000;
+  height: 24px;
+}
+
+.paso-card {
+  background: url('IMAGENES/FOTOS/cartel.png'); /* o el PNG/SVG de la tarjetita */
+  background-size: cover;
+  background-position: center;
+  border-radius: 0%;   /* para que quede bien pillo si el recorte no es tan irregular */
+  min-height: 98px;
+  min-width: 300px;
+  color: #222;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.03);
+  font-size: 1.08rem;
+  margin-bottom: 30px;
+}
+
+.paso-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48.49px;
+  height: 48.49px;
+  background: #5089D3;     /* el azul del círculo */
+  color: #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.suscrip-card {
+  position: relative;
+  background: transparent;
+  border: none;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.08);
+  overflow: visible;
+  min-height: 800px;
+  min-width: 370px;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+}
+.suscrip-bg-img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: url('IMAGENES/FOTOS/cardddd.png') center/cover no-repeat;
+  border-radius:0px;
+  pointer-events: none;
+  opacity: 1;
+}
+.suscrip-product-img {
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+}
+.suscrip-titulo-precio h6,
+.suscrip-titulo-precio .fs-3 {
+  text-shadow: 0 2px 10px rgba(255,255,255,0.25);
+}
+.suscrip-card .btn {
+  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+}
+.suscrip-card {
+  min-height: 800px; /* podés ajustar, pero no menos de 500px */
+}
+.brand-logo {
+  max-height: 30px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Hace los logos blancos si son PNG negros/transparente */
+  opacity: 0.92;
+  transition: opacity 0.2s;
+}
+.brand-logo:hover {
+  opacity: 1;
+}
+.form-custom {
+  border: 2px solid #4d8cf7;
+  border-radius: 12px;
+  background: #faf9f6;
+  font-size: 1.07rem;
+  color: #222;
+  padding:17px 1rem;
+  transition: border .2s;
+}
+.form-custom:focus {
+  border-color: #fcd133;
+  outline: none;
+  background: #fff;
+}
+
+/* Imagen sello de fondo + foto encima */
+.position-relative img:first-child {
+  max-width: 340px;
+  filter: drop-shadow(0 4px 24px rgba(77,140,247,0.07));
+}
+.position-relative img:last-child {
+  max-width: 230px;
+  margin: 30px 0 0 25px; /* ajuste fino según tu PNG */
+}
+
+.footer-custom {
+  background: #4d8cf7;
+  font-size: 1.06rem;
+  letter-spacing: .01em;
+}
+.footer-custom a:hover {
+  text-decoration: none;
+  opacity: .8;
+}
+.footer-custom small {
+  opacity: .8;
+  font-size: .96em;
+}
+.volanta-custom {
+  text-transform: uppercase;
+  font-family: 'Plus Jakarta Sans', 'Raleway', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  color: #30302E
+}
+
+.hero-title {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 6.7rem; /* 107px si tu html tiene font-size base de 16px */
+  font-weight: 700;
+  color: #5089D3;
+  line-height: 1.05;
+  margin-bottom: 10px;
+}
+
+.hero-lead {
+  font-size: 17px;
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  color: #30302E;
+  letter-spacing: 0.01em;
+  max-width: 500px;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 900px; /* ¡Subile a 900px si querés aún más grande! */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 991px) {
+  .hero-title { font-size: 3.5rem; }
+  .hero-img { max-width: 100%; }
+}
+.container {
+  max-width: 1600px;    /* Más ancho que el default, podés subirlo hasta 1600px si tu Figma es bien grande */
+  padding-left: 50px;   /* Espaciado lateral */
+  padding-right: 60px;
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+/* Volanta */
+.volanta-custom {
+  text-transform: uppercase;
+  font-family: 'Plus Jakarta Sans', 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  color: #30302E;
+  opacity: 0.82;
+  margin-bottom: 8px;
+}
+
+/* Título principal */
+.h2-custom {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 2.5rem; /* O 40px según tu diseño */
+  font-weight: 700;
+  color: #5089D;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+  /* Sacá la línea random */
+  position: static;
+}
+.h2-custom::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Lead */
+.quienes-lead {
+  max-width: 640px; /* Antes capaz era 420px o 480px */
+  font-size: 1.18rem;
+  color: #3B3B39;
+  line-height: 180%;
+  margin-bottom: 28px;
+}ß
+
+
+.img-sello-equipo {
+  max-width: 430px; /* Ajustalo según tu imagen */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .col-lg-6.ps-lg-5 {
+    padding-left: 56px !important; /* Dale aire a la derecha */
+  }
+}
+.img-sello-equipo {
+  max-width: 700px; /* O más si querés */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+#galeria-sensorial {
+  min-height: 100px;
+  background-image: url('IMAGENES/FOTOS/galeeeeeeee.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #fae; /* Poné un color chillón para ver si aparece */
+}
+#galeria-sensorial {
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+.nombre-equipo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;        /* Ajustá el tamaño a gusto */
+  color: #5089D3;
+  margin-bottom: 0.3em;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+
+.desc-equipo {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 19px;      /* Bajalo o subilo según el look que buscás */
+  color: #30302E;
+  line-height: 1.6;        /* Más interlineado para hacerlo más legible */
+  letter-spacing: 0.02em;
+  margin-left: 0;
+  margin-right:0;
+  margin-bottom: 0;
+}
+
+.desc-equipo b {
+  font-weight: 700;
+  color: #222;
+}
+.paso-card-custom {
+  background-image: url('IMAGENES/FOTOS/cartel.png');
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  min-height: 95px;        /* Ajustá según el alto del PNG */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;                /* Espacio entre número y texto */
+  padding: 0 32px;          /* Espaciado lateral */
+  margin-bottom: 30px;      /* Espacio entre cards */
+  /* Si las ves muy chicas, podés subir el min-height */
+}
+
+.paso-numero-custom {
+  background: #5089D3;     /* El azul que usás */
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.paso-texto-custom {
+  font-size: 18px;   /* O el tamaño que uses en el Figma */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #30302E;       /* O el color que uses para texto */
+  font-weight: 600;
+}
+
+
+.valores-section,
+.valores-section h2,
+.valores-section h3,
+.valores-section p,
+.valores-section .nombre-equipo,
+.valores-section .desc-equipo,
+.valores-section .volanta-custom {
+  color: #fff !important;
+}
+.card-img-postal {
+  width: 330px; /* Ajustá al tamaño real del PNG */
+  height: 500px; /* Ajustá al tamaño real del PNG */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-postal .card-postal-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.card-img-postal .card-postal-content {
+  position: absolute;
+  z-index: 2;
+  top: 0; left: 0; width: 100%; height: 100%;
+  padding: 2rem 1.4rem 1.2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  pointer-events: auto;
+}
+/* Imagen más grande y centrada */
+.contacto-img-sello {
+  max-width: 600px; /* Ajustá según el Figma */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Inputs y textarea oscuros */
+.form-custom {
+  border: 1.5px solid #5089D3 !important;
+  color: #5089D3!important;
+  background: transparent !important;
+  font-size: 1.05rem;
+  border-radius: 0.5rem;
+}
+
+/* El botón amarillo igual al resto */
+.btn-pill-yellow {
+  background: #ffc800;
+  color: #222;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.12rem;
+  box-shadow: 0 1px 8px 0 #ffe06731;
+  border: none;
+  padding: 0.85rem 0;
+  transition: all 0.13s;
+}
+
+.btn-pill-yellow:hover {
+  background: #ffde59;
+  color: #111;
+}
+
+.mt-6 {
+  margin-top: 150px !important; /* Más espacio para separar el newsletter */
+}
+/* Hace la sección más alta y espaciosa */
+.bodegas-section {
+  min-height: 500px;   /* Podés subirlo más si querés, ej: 400px */
+  padding: 90px 0 90px 0 !important;
+}
+
+/* Agranda los logos sin que se deformen y los centra */
+.brand-logo {
+  max-width: 300px;  /* O hasta 160px si te copa */
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 2px 10px #0002); /* Un toque de glow si querés */
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .bodegas-section {
+    padding: 50px 0 !important;
+  }
+  .brand-logo {
+    max-width: 300px;
+  }
+}
+.footer-custom {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  background: #4d8cf7;
+}
+
+.footer-custom .container {
+  max-width: 1100px; /* Hacelo un poco más angosto */
+}
+
+.footer-custom .row {
+  row-gap: 0;
+  column-gap: 0;
+}
+
+.footer-custom .col-md-3 {
+  margin-bottom: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.footer-custom h6 {
+  font-size: 1.1rem;
+}
+
+.footer-custom small {
+  font-size: 0.97rem;
+}
+
+.footer-custom .mt-3 a {
+  margin-right: 30px !important;
+}
+.footer-custom .mt-3 a:last-child {
+  margin-right: 0 !important;
+}
+
+/* Ajuste visual para alinear texto mejor en mobile */
+@media (max-width: 767px) {
+  .footer-custom .text-md-start {
+    text-align: center !important;
+  }
+  .footer-custom .col-md-3 {
+    margin-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.btn-pill-yellow {
+  background: #FFD008 !important;
+  color: #3B3B39 !important;
+  border: none;
+  border-radius: 100px !important;
+  padding: 15px 35px;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  transition: background 0.15s, color 0.15s;
+  box-shadow: 0 3px 8px 0 rgb(0 0 0 / 6%);
+}
+
+.btn-pill-yellow:hover,
+.btn-pill-yellow:focus {
+  background: #ffce00 !important;
+  color: #3B3B39 !important;
+  text-decoration: none;
+}
+
+.btn-pill-yellow .divider {
+  display: inline-block;
+  width: 2px;
+  height: 26px;
+  background: #222;
+  margin: 0 7px;
+  opacity: 0.6;
+}
+
+.btn-pill-yellow i {
+  font-size: 26px;
+  vertical-align: middle;
+  margin-left: 0;
+}
