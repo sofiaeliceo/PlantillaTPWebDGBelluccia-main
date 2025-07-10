@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Visible - Belluccia 3</title>
+
+    <!-- Tipografía desde Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#">MiWeb</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Paso a paso</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Galeria sensorial</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Preguntas frecuentes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción con fondo -->
+<section class="section-spacing bg-cover d-flex align-items-center" style="background-image: url('IMAGENES/FOTOS/hero-detalle.png'); min-height: 100vh;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texto principal -->
+      <div class="col-lg-7">
+        <p class="volanta-custom mb-2">LA PROPUESTA IDEAL PARA VOS</p>
+        <h1 class="hero-title mb-3">Box curado</h1>
+        <p class="hero-lead mb-4">
+          <strong>Una selección con identidad:</strong> Vino tinto, un naranjo, maridaje artesanal y fichas sensoriales con video!  
+          Todo curado por sommeliers. Una selección curada por sommeliers, con vinos únicos, fichas sensoriales, maridajes y acceso a experiencias exclusivas.
+        </p>
+        <a href="#" class="btn btn-pill-yellow">
+          Comprar
+          <span class="divider"></span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+      <!-- Imagen destacada -->
+      <div class="col-md-5 text-center">
+        <img src="IMAGENES/FOTOS/caja1ok!.png" class="img-hero-detalle" alt="Box curado">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- HERO: Sección de portada con llamado a la acción con fondo -->
+
+
+<section class="section-spacing bg-cover" style="background-image: url('IMAGENES/FOTOS/ssss.jpg'); min-height: 60vh; display: flex; align-items: center;">
+  <div class="container text-center w-100">
+    <p class="volanta-custom mb-2 text-celeste">CONTENIDO DE LA CAJA</p>
+    <h2 class="h2-custom mb-5 text-celeste">Vinos, maridajes y toda la data.</h2>
+    <div class="row mt-5 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4 valor-card">
+        <img src="IMAGENES/FOTOS/quses.png" class="img-fluid mb-4" alt="Maridaje artesanal">
+        <h3 class="nombre-equipo text-celeste">Maridaje artesanal</h3>
+        <p class="desc-equipo text-negro">
+          Porción de queso de cabra madurado, salame criollo y pan de masa madre deshidratado, todo sellado al vacío para conservar frescura.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4 valor-card">
+        <img src="IMAGENES/FOTOS/vinitto.png" class="img-fluid mb-4" alt="Vino tinto">
+        <h3 class="nombre-equipo text-celeste">Vino tinto</h3>
+        <p class="desc-equipo text-negro">
+          2 tintos de distintas regiones. Incluye un Malbec de Valle de Uco pensado para contrastar estilo, altura y terruño.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4 valor-card">
+        <img src="IMAGENES/FOTOS/naran.png" class="img-fluid mb-4" alt="Naranjo">
+        <h3 class="nombre-equipo text-celeste">Naranjo</h3>
+        <p class="desc-equipo text-negro">
+          Un vino naranja de maceración prolongada, elaborado con uvas blancas y fermentación con piel. Elegido por su perfil especiado.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- /ABOUT -->
+
+<!-- PASOS: Cómo funciona -->
+<section 
+  class="section-spacing bg-cover" 
+  style="background-image: url('IMAGENES/FOTOS/QUIENES\ SOMOS\ fondo.jpg) background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Columna IZQUIERDA: pasos -->
+      <div class="col-lg-6 ps-lg-5">
+        <p class="volanta-custom mb-1">beneficios que suman</p>
+        <h2 class="h2-custom mb-2">Lo que hace única a tu caja</h2>
+        <div class="row g-3">
+          <!-- CARD 1 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">1</span>
+              <span class="paso-texto-custom fw-semibold">Curaduría mensual</span>
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">2</span>
+              <span class="paso-texto-custom fw-semibold">Selección premium</span>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">3</span>
+              <span class="paso-texto-custom fw-semibold">Maridajes listos</span>
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">4</span>
+              <span class="paso-texto-custom fw-semibold">Experiencia guiada</span>
+            </div>
+          </div>
+          <!-- CARD 5 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">5</span>
+              <span class="paso-texto-custom fw-semibold">WineSwipe</span>
+            </div>
+          </div>
+          <!-- CARD 6 -->
+          <div class="col-6">
+            <div class="paso-card-custom d-flex align-items-center justify-content-center">
+              <span class="paso-numero-custom me-3">6</span>
+              <span class="paso-texto-custom fw-semibold">Envío gratis</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-pill-yellow mt-4">
+          Conocer más
+          <span class="divider"></span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+      <!-- Columna DERECHA: imagen -->
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+        <img src="IMAGENES/FOTOS/x.png" class="img-fluid img-stamp" alt="Copas de vino brindando">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA A: Grid clásico de 3 columnas con fondo y más espacio -->
+<section 
+  class="section-spacing bg-cover py-5" 
+  id="galeria-sensorial"
+  style="background-image: url('IMAGENES/FOTOS/galeeeeeeee.png') background-size: cover; background-position: center;">
+  <div class="container text-center">
+    <p class="volanta-custom mb-2">galería sensorial</p>
+    <h2 class="h2-custom mb-5">Nuestras especialidades en imágenes</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/vinitttt.png" class="img-fluid img-rounded rounded" alt="Imagen 1">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/quesito.png" class="img-fluid img-rounded rounded" alt="Imagen 2">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/f.png" class="img-fluid img-rounded rounded" alt="Imagen 3">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/jamoncito.png" class="img-fluid img-rounded rounded" alt="Imagen 4">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/9.png" class="img-fluid img-rounded rounded" alt="Imagen 5">
+      </div>
+      <div class="col-md-4">
+        <img src="IMAGENES/FOTOS/uvas.png" class="img-fluid img-rounded rounded" alt="Imagen 6">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-spacing container text-center" style="padding-top: 56px; padding-bottom: 56px;">
+  <p class="text-uppercase mb-2" style="letter-spacing:2px; color:#B49727;">Opiniones reales</p>
+  <h2 class="h2-custom mb-5" style="color:#2596e7; font-weight:700;">Conocé la opinión nuestros socios</h2>
+  <div class="row justify-content-center">
+    <!-- Testimonio 1 -->
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="testimonio-card text-center p-4 w-100">
+        <div class="estrellas mb-3">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+        <h3 class="testimonio-titulo mb-3"></h3>
+        <p class="testimonio-texto mb-4">
+          Buena idea, pero puede mejorar. Me copó el concepto y los vinos están bien, pero uno vino medio tibio y el maridaje no me pareció tan especial. Igual, para probar algo distinto, va.
+        </p>
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="testimonio-img mb-3" alt="Lucia M.">
+        <div class="testimonio-nombre">Lucia M.</div>
+      </div>
+    </div>
+    <!-- Testimonio 2 -->
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="testimonio-card text-center p-4 w-100">
+        <div class="estrellas mb-3">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <h3 class="testimonio-titulo mb-3"></h3>
+        <p class="testimonio-texto mb-4">
+          ¡Me voló la cabeza! No soy experta en vino, pero cada caja me enseña algo nuevo.<br>
+          Los videos de cata están buenísimos y todo llega perfecto.
+        </p>
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" class="testimonio-img mb-3" alt="Florencia C.">
+        <div class="testimonio-nombre">Florencia C.</div>
+      </div>
+    </div>
+    <!-- Testimonio 3 -->
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="testimonio-card text-center p-4 w-100">
+        <div class="estrellas mb-3">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+        <h3 class="testimonio-titulo mb-3"></h3>
+        <p class="testimonio-texto mb-4">
+          Me encantó la variedad de vinos, sobre todo el blanco. El envío llegó bien y las fichas son súper claras. Le pondría 5 estrellas si pudiera elegir más opciones en el box.
+        </p>
+        <img src="https://randomuser.me/api/portraits/men/43.jpg" class="testimonio-img mb-3" alt="Marcos T.">
+        <div class="testimonio-nombre">Marcos T.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- PLANES DE SUSCRIPCIÓN: Cards tipo postal sobre fondo -->
+<section 
+  class="section-spacing bg-cover"
+  style="background-image: url('IMAGENES/FOTOS/SUSCRIPPP.jpg'); background-size: cover; background-position: center; min-height: 30vh;">
+  <div class="container">
+    <p class="volanta-custom text-center mb-2">NUESTRAS SUSCRIPCIONES</p>
+    <h2 class="h2-custom text-center mb-2">Descubrí la propuesta ideal para vos</h2>
+    <p class="p-custom text-center mb-5">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
+    <div class="row justify-content-center align-items-end gy-5">
+      <!-- CARD 1: Box Clásico -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card-img-postal position-relative">
+          <img src="IMAGENES/FOTOS/cardddd.png" alt="Fondo postal" class="w-100 card-postal-bg">
+          <div class="card-postal-content">
+            <h6 class="text-uppercase text-muted mb-1">Box Clásico</h6>
+            <div class="fs-3 fw-bold mb-2 text-primary">$49.000 <span class="fs-6 fw-normal text-dark">/ mes</span></div>
+            <img src="IMAGENES/FOTOS/caja1ok!.png" class="img-fluid my-3" alt="Box Clásico" style="max-width: 150px;">
+            <p class="p-custom mt-2 text-center">Ideal para quienes están empezando.<br><strong>¿Qué incluye?</strong></p>
+            <ul class="list-unstyled text-start mx-auto mb-3" style="max-width: 210px;">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 vino tinto del sur</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 vino blanco</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Maridaje básico</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Fichas sensoriales + QR</li>
+              <li><i class="bi bi-x-circle text-secondary me-2"></i> Acceso a cata</li>
+              <li><i class="bi bi-x-circle text-secondary me-2"></i> WineSwap</li>
+            </ul>
+            <a href="#" class="btn btn-pill-yellow mt-2">
+              ¡Lo quiero! <span class="divider"></span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 2: Box Curado -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card-img-postal position-relative">
+          <img src="IMAGENES/FOTOS/cardddd.png" alt="Fondo postal" class="w-100 card-postal-bg">
+          <div class="card-postal-content">
+            <h6 class="text-uppercase text-muted mb-1">Box Curado</h6>
+            <div class="fs-3 fw-bold mb-2 text-primary">$55.000 <span class="fs-6 fw-normal text-dark">/ mes</span></div>
+            <img src="IMAGENES/FOTOS/caja1ok!.png" class="img-fluid my-3" alt="Box Curado" style="max-width: 150px;">
+            <p class="p-custom mt-2 text-center">Más identidad y detalles.<br><strong>¿Qué incluye?</strong></p>
+            <ul class="list-unstyled text-start mx-auto mb-3" style="max-width: 210px;">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 vino tinto del norte</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 vino naranjo</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Maridaje al vacío</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Fichas sensoriales + QR</li>
+              <li><i class="bi bi-x-circle text-secondary me-2"></i> Acceso a cata</li>
+              <li><i class="bi bi-x-circle text-secondary me-2"></i> WineSwap</li>
+            </ul>
+            <a href="#" class="btn btn-pill-yellow mt-2">
+              ¡Lo quiero! <span class="divider"></span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 3: Box Explorador -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card-img-postal position-relative">
+          <img src="IMAGENES/FOTOS/cardddd.png" alt="Fondo postal" class="w-100 card-postal-bg">
+          <div class="card-postal-content">
+            <h6 class="text-uppercase text-muted mb-1">Box Explorador</h6>
+            <div class="fs-3 fw-bold mb-2 text-primary">$60.000 <span class="fs-6 fw-normal text-dark">/ mes</span></div>
+            <img src="IMAGENES/FOTOS/caja1ok!.png" class="img-fluid my-3" alt="Box Explorador" style="max-width: 150px;">
+            <p class="p-custom mt-2 text-center">Para los expertos, todo desbloqueado!<br><strong>¿Qué incluye?</strong></p>
+            <ul class="list-unstyled text-start mx-auto mb-3" style="max-width: 210px;">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 vino sorpresa</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Copa incluida</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Maridaje temático</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Fichas sensoriales + QR</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Acceso a cata virtual</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> WineSwap</li>
+            </ul>
+            <a href="#" class="btn btn-pill-yellow mt-2">
+              ¡Lo quiero! <span class="divider"></span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- BODEGAS QUE NOS BANCAN -->
+<section class="section-spacing bg-cover text-white bodegas-section" style="background-image: url('IMAGENES/FOTOS/bodegas.png');">
+  <div class="container text-center">
+    <h2 class="h2-custom mb-5 fw-bold">Bodegas que nos bancan</h2>
+    <div class="row justify-content-center align-items-center g-4">
+      <div class="col-6 col-md-2 d-flex justify-content-center">
+        <img src="IMAGENES/FOTOS/logo1.png" class="img-fluid brand-logo" alt="Riccitelli">
+      </div>
+      <div class="col-6 col-md-2 d-flex justify-content-center">
+        <img src="IMAGENES/FOTOS/logo2.png" class="img-fluid brand-logo" alt="El Porvenir de Cafayate">
+      </div>
+      <div class="col-6 col-md-2 d-flex justify-content-center">
+        <img src="IMAGENES/FOTOS/logo3.png" class="img-fluid brand-logo" alt="Zorzal">
+      </div>
+      <div class="col-6 col-md-2 d-flex justify-content-center">
+        <img src="IMAGENES/FOTOS/logo4.png" class="img-fluid brand-logo" alt="Krontiras">
+      </div>
+      <div class="col-6 col-md-2 d-flex justify-content-center">
+        <img src="IMAGENES/FOTOS/logo1.png" class="img-fluid brand-logo" alt="Durigutti">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /BODEGAS QUE NOS BANCAN -->
+
+
+<!-- /preguntas -->
+<section class="section-spacing container">
+  <h2 class="h2-custom text-center mb-5">Preguntas frecuentes</h2>
+  <div class="faq-bg p-4 rounded-4">
+    <div class="accordion" id="faqAccordion">
+      <!-- Pregunta 1 -->
+      <div class="accordion-item faq-item mb-3">
+        <h2 class="accordion-header" id="faq1-heading">
+          <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+            <span class="faq-num">01</span>
+            <span class="faq-pregunta">¿Puedo elegir los vinos que recibo?</span>
+            <span class="faq-icon ms-auto"><i class="bi bi-plus-lg"></i></span>
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Por ahora no, pero todos los meses hay sorpresas y nunca se repite el mismo vino dos veces seguidas.
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 2 -->
+      <div class="accordion-item faq-item mb-3">
+        <h2 class="accordion-header" id="faq2-heading">
+          <button class="accordion-button faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="true" aria-controls="faq2">
+            <span class="faq-num">02</span>
+            <span class="faq-pregunta">¿Cuánto tarda en llegar mi box?</span>
+            <span class="faq-icon ms-auto"><i class="bi bi-dash-lg"></i></span>
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse show" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Los envíos llegan en 48/72hs hábiles después de confirmar el pago. ¡Te avisamos cuando sale tu box!
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 3 -->
+      <div class="accordion-item faq-item mb-3">
+        <h2 class="accordion-header" id="faq3-heading">
+          <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            <span class="faq-num">03</span>
+            <span class="faq-pregunta">¿Qué incluye cada box?</span>
+            <span class="faq-icon ms-auto"><i class="bi bi-plus-lg"></i></span>
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Vinos seleccionados, fichas sensoriales, maridaje y acceso a catas online exclusivas.
+          </div>
+        </div>
+      </div>
+      <!-- Sumá más preguntas duplicando el bloque -->
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER: Pie de página completo -->
+<footer class="footer-custom text-white pt-5 pb-3" style="background: #4d8cf7;">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Logo -->
+      <div class="col-md-3 mb-4 mb-md-0 d-flex flex-column justify-content-between">
+        <div>
+          <img src="IMAGENES/FOTOS/YaVino.png" alt="Logo" class="mb-3" style="max-width: 120px;">
+        </div>
+        <small class="d-block mt-3">&copy; 2025, Todos los derechos reservados.</small>
+      </div>
+
+      <!-- Horarios -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold mb-2">Horarios</h6>
+        <div class="text-white-50">
+          <div>Semana: <span class="text-white-50">10 a 19hs</span></div>
+          <div>Sab y Dom: <span class="text-white-50">11 a 16hs</span></div>
+        </div>
+      </div>
+
+      <!-- Dirección -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold mb-2">Dirección</h6>
+        <div>Av. Vino 1234, Mendoza, Argentina</div>
+      </div>
+
+      <!-- Contacto + redes -->
+      <div class="col-md-3 d-flex flex-column justify-content-between">
+        <div>
+          <h6 class="fw-bold mb-2">Contacto</h6>
+          <div class="mb-1">
+            <i class="bi bi-envelope me-2"></i> info@tuweb.com
+          </div>
+          <div>
+            <i class="bi bi-telephone me-2"></i> +54 261 555-1111
+          </div>
+        </div>
+        <div class="mt-3">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter-x fs-5"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>
